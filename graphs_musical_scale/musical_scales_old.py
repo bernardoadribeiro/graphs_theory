@@ -25,7 +25,7 @@ class MusicalScales():
             'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']  # len: 12
 
         self.cromatic_scale_descending = [
-            'B', 'A#', 'A', 'G#', 'G', 'F#', 'F', 'E', 'D#', 'D', 'C#', 'C']  # len: 12
+            'B', 'Bb', 'A', 'Ab', 'G', 'Gb', 'F', 'E', 'Eb', 'D', 'Db', 'C']  # len: 12
 
     def generate_cromatic_graph(self, scale: str, tonic_note: str):
         """ Generates a Graph that represents
@@ -46,7 +46,7 @@ class MusicalScales():
     def generate_scale(self, tonic_note: str = 'C#', scale: str = 'major'):
         """ Generates a scale for a given tonic note.
         """
-        base_index = self.cromatic_scale_ascending.index(tonic_note)  # base_index = 2
+        base_index = self.cromatic_scale_ascending.index(tonic_note)
 
         # Generate the scale from Tonic note.
         major_scale = {
