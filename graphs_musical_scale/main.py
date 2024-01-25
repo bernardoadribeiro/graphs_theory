@@ -20,9 +20,9 @@ if __name__ == '__main__':
 
     elif op == 'D2':
         print(
-            f"Major: {Music().compose_music('major', 'C', 'ascending')} \n"
-            f"Minor: {Music().compose_music('minor', 'C', 'descending')} \n"
-            f"Pentatonica: {Music().compose_music('pentatonica', 'C', 'ascending')} \n"
+            f"Major: {MusicalScale().generate('major', 'C', 'ascending')} \n"
+            f"Minor: {MusicalScale().generate('minor', 'C', 'descending')} \n"
+            f"Pentatonica: {MusicalScale().generate('pentatonica', 'C', 'ascending')} \n"
         )
 
     elif op == 'D3':

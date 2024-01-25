@@ -48,7 +48,8 @@ class Music:
         self.notes = MusicalScale().generate(scale, tone, interval_type)
         self.music = self._make_melody(self.notes)
 
-        return self.notes
+        print(f'Notes: {self.music}')
+        return self.music
 
     def _get_frequency(self, note):
         """Return the frequency of a given note.
