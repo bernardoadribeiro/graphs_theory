@@ -1,4 +1,4 @@
-from musical_scales import MusicalScales
+from graphs_musical_scale.musical_scales_old import MusicalScales
 
 MusicalScales().generate_scale('C', 'major')
 
