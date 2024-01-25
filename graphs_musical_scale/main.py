@@ -32,6 +32,7 @@ if __name__ == '__main__':
 
         music.compose_music(scale, tone, interval_type)
         music.play_music()
+
     else:
         music.name = 'Twinkle Twinkle Little Star'
         music.tone = 'C'
