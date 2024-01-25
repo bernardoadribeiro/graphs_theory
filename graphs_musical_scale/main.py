@@ -15,8 +15,10 @@ if __name__ == '__main__':
     )).upper()
 
     if op == 'C1':
-        scale = MusicalScale().view_complete_scales_graph('major', 'ascending')
-        print(pformat(scale, indent=4))
+        scale_asc = MusicalScale().view_complete_scales_graph('major', 'ascending')
+        scale_desc = MusicalScale().view_complete_scales_graph('major', 'descending')
+        print('Ascending: \n', pformat(scale_asc, indent=4))
+        print('Descending: \n', pformat(scale_desc, indent=4))
 
     elif op == 'D2':
         print(

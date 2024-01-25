@@ -5,8 +5,10 @@
 
     ```python
     MusicalScale().view_complete_scales_graph('major', 'ascending')
+    MusicalScale().view_complete_scales_graph('major', 'descending')
     
     #result
+    Ascending:
     {   'A': {'A': 0, 'B': 2, 'C#': 2, 'D': 1, 'E': 2, 'F#': 2, 'G#': 2},
         'A#': {'A': 2, 'A#': 0, 'C': 2, 'D': 2, 'D#': 1, 'F': 2, 'G': 2},
         'B': {'A#': 2, 'B': 0, 'C#': 2, 'D#': 2, 'E': 1, 'F#': 2, 'G#': 2},
@@ -18,8 +20,20 @@
         'F': {'A': 2, 'A#': 1, 'C': 2, 'D': 2, 'E': 2, 'F': 0, 'G': 2},
         'F#': {'A#': 2, 'B': 1, 'C#': 2, 'D#': 2, 'F': 2, 'F#': 0, 'G#': 2},
         'G': {'A': 2, 'B': 2, 'C': 1, 'D': 2, 'E': 2, 'F#': 2, 'G': 0},
-        'G#': {'A#': 2, 'C': 2, 'C#': 1, 'D#': 2, 'F': 2, 'G': 2, 'G#': 0}
-    }
+        'G#': {'A#': 2, 'C': 2, 'C#': 1, 'D#': 2, 'F': 2, 'G': 2, 'G#': 0}}
+    Descending:
+    {   'A': {'A': 0, 'Ab': 2, 'B': 2, 'Db': 2, 'E': 2, 'Eb': 1, 'Gb': 2},
+        'Ab': {'Ab': 0, 'Bb': 2, 'C': 2, 'D': 2, 'E': 1, 'F': 2, 'G': 2},
+        'B': {'Ab': 2, 'B': 0, 'C': 2, 'D': 2, 'E': 2, 'G': 2, 'Gb': 1},
+        'Bb': {'A': 2, 'B': 2, 'Bb': 0, 'Db': 2, 'Eb': 2, 'F': 1, 'Gb': 2},
+        'C': {'A': 2, 'Bb': 2, 'C': 0, 'Db': 2, 'Eb': 2, 'F': 2, 'G': 1},
+        'D': {'Ab': 1, 'Bb': 2, 'C': 2, 'D': 0, 'Eb': 2, 'F': 2, 'G': 2},
+        'Db': {'A': 1, 'Ab': 2, 'B': 2, 'D': 2, 'Db': 0, 'E': 2, 'Gb': 2},
+        'E': {'Ab': 2, 'B': 1, 'C': 2, 'D': 2, 'E': 0, 'F': 2, 'G': 2},
+        'Eb': {'A': 2, 'B': 2, 'Bb': 1, 'Db': 2, 'E': 2, 'Eb': 0, 'Gb': 2},
+        'F': {'A': 2, 'Bb': 2, 'C': 1, 'Db': 2, 'Eb': 2, 'F': 0, 'Gb': 2},
+        'G': {'A': 2, 'Bb': 2, 'C': 2, 'D': 1, 'Eb': 2, 'F': 2, 'G': 0},
+        'Gb': {'Ab': 2, 'B': 2, 'D': 2, 'Db': 1, 'E': 2, 'G': 2, 'Gb': 0}}
     ```
 
 - D.2) Crie um algoritmo que faça um percurso nos grafos ascendentes ou descendentes de tal forma que os intervalos entre os vértices respeitem os intervalos das escalas Maior, Menor e Pentatônica a partir de uma nota inicial (tom).
